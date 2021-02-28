@@ -6,8 +6,8 @@ import {
 } from "./structures/index.ts";
 
 export class CommandBuilder {
-    private name: string | undefined;
-    private description: string | undefined;
+    private name: string;
+    private description: string;
     private options: ApplicationCommandOption[];
 
     constructor() {
@@ -48,8 +48,8 @@ export class CommandBuilder {
 
 export class SubcommandBuilder {
     type: ApplicationCommandOptionType = ApplicationCommandOptionType.SUB_COMMAND;
-    name: string | undefined;
-    description: string | undefined;
+    name: string;
+    description: string;
     default?: boolean;
     required?: boolean;
     options: ApplicationCommandOption[];
@@ -109,8 +109,8 @@ export class SubcommandBuilder {
 export class SubcommandGroupBuilder {
     type: ApplicationCommandOptionType =
         ApplicationCommandOptionType.SUB_COMMAND_GROUP;
-    name: string | undefined;
-    description: string | undefined;
+    name: string;
+    description: string;
     default?: boolean;
     required?: boolean;
     options: ApplicationCommandOption[];
@@ -164,8 +164,8 @@ export class SubcommandGroupBuilder {
 
 export class ApplicationCommandOptionBuilder {
     type: ApplicationCommandOptionType;
-    name: string | undefined;
-    description: string | undefined;
+    name: string;
+    description: string;
     default?: boolean;
     required?: boolean;
     choices?: ApplicationCommandOptionChoice[];
