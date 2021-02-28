@@ -36,9 +36,9 @@ export class DiscordInteractions {
     };
 
     getApplicationCommands = async (guildId?: string) => {
-        const request = await fetch(guildId
+        const request = await fetch(makeEndpoint(guildId
             ? `applications/${this.applicationid}/guilds/${guildId}/commands`
-            : `applications/${this.applicationid}/commands`, {
+            : `applications/${this.applicationid}/commands`), {
             method: "GET",
             headers: {
                 "Authorization": `${this.tokenPrefix}${this.authToken}`
@@ -54,9 +54,9 @@ export class DiscordInteractions {
     ) => {
         const suffix = commandId ? `/${commandId}` : "";
         const method = commandId ? "PATCH" : "POST";
-        const request = await fetch(guildId
+        const request = await fetch(makeEndpoint(guildId
             ? `applications/${this.applicationid}/guilds/${guildId}/commands${suffix}`
-            : `applications/${this.applicationid}/commands${suffix}`, {
+            : `applications/${this.applicationid}/commands${suffix}`), {
             method: method,
             headers: {
                 "Authorization": `${this.tokenPrefix}${this.authToken}`
@@ -75,9 +75,9 @@ export class DiscordInteractions {
     };
 
     deleteApplicationCommand = async (commandId: string, guildId?: string) => {
-        const request = await fetch(guildId
+        const request = await fetch(makeEndpoint(guildId
             ? `applications/${this.applicationid}/guilds/${guildId}/commands/${commandId}`
-            : `applications/${this.applicationid}/commands/${commandId}`, {
+            : `applications/${this.applicationid}/commands/${commandId}`), {
             method: "DELETE",
             headers: {
                 "Authorization": `${this.tokenPrefix}${this.authToken}`

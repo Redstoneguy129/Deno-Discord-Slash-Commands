@@ -6,7 +6,9 @@ import {
 } from "./structures/index.ts";
 
 export class CommandBuilder {
+    // @ts-ignore
     private name: string;
+    // @ts-ignore
     private description: string;
     private options: ApplicationCommandOption[];
 
@@ -48,7 +50,9 @@ export class CommandBuilder {
 
 export class SubcommandBuilder {
     type: ApplicationCommandOptionType = ApplicationCommandOptionType.SUB_COMMAND;
+    // @ts-ignore
     name: string;
+    // @ts-ignore
     description: string;
     default?: boolean;
     required?: boolean;
@@ -109,7 +113,9 @@ export class SubcommandBuilder {
 export class SubcommandGroupBuilder {
     type: ApplicationCommandOptionType =
         ApplicationCommandOptionType.SUB_COMMAND_GROUP;
+    // @ts-ignore
     name: string;
+    // @ts-ignore
     description: string;
     default?: boolean;
     required?: boolean;
@@ -163,8 +169,11 @@ export class SubcommandGroupBuilder {
 }
 
 export class ApplicationCommandOptionBuilder {
+    // @ts-ignore
     type: ApplicationCommandOptionType;
+    // @ts-ignore
     name: string;
+    // @ts-ignore
     description: string;
     default?: boolean;
     required?: boolean;
