@@ -2,6 +2,11 @@
 
 This package provides Slash command support for the new Discord Interactions API.
 
+![](https://img.shields.io/github/v/release/Redstoneguy129/Deno-Discord-Slash-Commands?label=Version&style=for-the-badge)
+![](https://forthebadge.com/images/badges/made-with-typescript.svg)
+![](https://img.shields.io/github/license/Redstoneguy129/Deno-Discord-Slash-Commands?style=for-the-badge)
+![](https://img.shields.io/github/issues/Redstoneguy129/Deno-Discord-Slash-Commands?style=for-the-badge)
+
 We've documented every type used by the interactions API, so you can make use of this library in your own projects, or make use of the utility functions we've provided to create, get, and delete slash commands.
 
 ## Installation
