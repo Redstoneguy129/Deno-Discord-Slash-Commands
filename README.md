@@ -1,4 +1,4 @@
-# discord-slash-commands
+# Deno Discord Slash Commands
 
 This package provides Slash command support for the new Discord Interactions API.
 
