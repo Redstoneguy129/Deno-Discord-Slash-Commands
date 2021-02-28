@@ -2,7 +2,7 @@ import {
     ApplicationCommand,
     PartialApplicationCommand,
     Snowflake,
-} from "./structures";
+} from "./structures/index.ts";
 
 import { verifySignature as _verifySignature } from "./utils.ts";
 
@@ -10,7 +10,7 @@ const DISCORD_ENDPOINT = "https://discord.com/api/v8/";
 
 const makeEndpoint = (endpoint: any) => `${DISCORD_ENDPOINT}${endpoint}`;
 
-export * from "./structures";
+export * from "./structures/index.ts";
 export * from "./builders.ts";
 
 export class DiscordInteractions {

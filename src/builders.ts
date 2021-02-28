@@ -3,7 +3,7 @@ import {
     ApplicationCommandOptionChoice,
     ApplicationCommandOptionType,
     PartialApplicationCommand
-} from "./structures";
+} from "./structures/index.ts";
 
 export class CommandBuilder {
     private name: string | undefined;
