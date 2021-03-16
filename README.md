@@ -2,40 +2,23 @@
 
 This package provides Slash command support for the new Discord Interactions API.
 
-[![npm](https://img.shields.io/npm/v/slash-commands?color=red)](https://www.npmjs.com/package/slash-commands)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/slash-commands)](https://www.npmjs.com/package/slash-commands)
-[![npm downloads](https://img.shields.io/npm/dt/slash-commands?color=blue)](https://www.npmjs.com/package/slash-commands)
+![](https://img.shields.io/github/v/release/Redstoneguy129/Deno-Discord-Slash-Commands?label=Version&style=for-the-badge)
+![](https://forthebadge.com/images/badges/made-with-typescript.svg)
+![](https://img.shields.io/github/license/Redstoneguy129/Deno-Discord-Slash-Commands?style=for-the-badge)
+![](https://img.shields.io/github/issues/Redstoneguy129/Deno-Discord-Slash-Commands?style=for-the-badge)
 
 We've documented every type used by the interactions API, so you can make use of this library in your own projects, or make use of the utility functions we've provided to create, get, and delete slash commands.
 
 ## Installation
 
-This is a [Node.js](https://nodejs.org/en/) module available from the [npm registry](https://www.npmjs.com/package/slash-commands).
-
-You can install it with npm
-
-```bash
-npm install slash-commands
-```
-
-or with Yarn
-
-```bash
-yarn add slash-commands
-```
+This is a [Deno](https://deno.land/) module available from the [Deno module registry](https://deno.land/x/discord_slash_commands).
 
 ## Importing
 
 To import:
 
 ```ts
-import { DiscordInteractions } from "slash-commands";
-```
-
-or
-
-```js
-const { DiscordInteractions } = require("slash-commands");
+import { DiscordInteractions } from "https://deno.land/x/discord_slash_commands@version/mod.ts";
 ```
 
 ## Initialization
@@ -140,12 +123,8 @@ await interaction
   .catch(console.error);
 ```
 
-## Disclaimer
-
-The slash command API is incomplete, so this library is likely to have breaking changes on non-major releases.
-
-Once the slash command API is stable, we will bump the project to v2.0.0.
-
 ## Contributing
 
-Help is much-needed to improve the library and add all features. Please feel free to make a PR to [the repository](https://github.com/MeguminSama/discord-slash-commands).
+Help is much-needed to improve the library and add all features. Please feel free to make a PR to [the repository](https://github.com/Redstoneguy129/Deno-Discord-Slash-Commands).
+
+This is a port of [MeguminSama's NodeJS Repo](https://github.com/MeguminSama/discord-slash-commands/) to Deno.

@@ -1,8 +1,7 @@
 export enum InteractionResponseType {
-  /** ACK a ping */
-  PONG = 1,
-  /** Respond immediately */
-  CHANNEL_MESSAGE_WITH_SOURCE = 4,
-  /** ACK interaction and respond later */
-  DEFERRED_CHANNEL_MESSAGE_WITH_SOURCE = 5,
+    PONG = 1,
+    ACKNOWLEDGE = 2,
+    CHANNEL_MESSAGE = 3,
+    CHANNEL_MESSAGE_WITH_SOURCE = 4,
+    ACK_WITH_SOURCE = 5,
 }
