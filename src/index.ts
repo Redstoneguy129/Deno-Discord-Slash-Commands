@@ -59,7 +59,8 @@ export class DiscordInteractions {
             : `applications/${this.applicationid}/commands${suffix}`), {
             method: method,
             headers: {
-                "Authorization": `${this.tokenPrefix}${this.authToken}`
+                "Authorization": `${this.tokenPrefix}${this.authToken}`,
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(command)
         });
@@ -80,7 +81,9 @@ export class DiscordInteractions {
             : `applications/${this.applicationid}/commands/${commandId}`), {
             method: "DELETE",
             headers: {
-                "Authorization": `${this.tokenPrefix}${this.authToken}`
+                "Authorization": `${this.tokenPrefix}${this.authToken}`,
+                "Content-Type": "application/json"
+
             }
         });
         return request.status == 204;
