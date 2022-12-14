@@ -8,10 +8,10 @@ export type ApplicationCommandOption = {
     required?: boolean;
     choices?: ApplicationCommandOptionChoice[];
     options?: ApplicationCommandOption[];
-    minValue?: number;
-    maxValue?: number;
-    minLength?: number;
-    maxLength?: number;
+    min_value?: number;
+    max_value?: number;
+    min_length?: number;
+    max_length?: number;
 };
 
 export type ApplicationCommandOptionValue = string | number | boolean;
