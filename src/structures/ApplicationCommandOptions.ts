@@ -8,6 +8,10 @@ export type ApplicationCommandOption = {
     required?: boolean;
     choices?: ApplicationCommandOptionChoice[];
     options?: ApplicationCommandOption[];
+    minValue?: number;
+    maxValue?: number;
+    minLength?: number;
+    maxLength?: number;
 };
 
 export type ApplicationCommandOptionValue = string | number | boolean;
@@ -21,4 +25,7 @@ export enum ApplicationCommandOptionType {
     USER = 6,
     CHANNEL = 7,
     ROLE = 8,
+    MENTIONABLE = 9,
+    NUMBER = 10,
+    ATTACHMENT = 11
 }
